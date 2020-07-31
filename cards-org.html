@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right:10px;
+  border-radius:18px;
+  box-shadow: 0 7px 14px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover{
+	opacity: 1;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
+	-webkit-transform: translate(2px,2px);
+	stransform: translate(2px,2px);
+}
+
+.modal-content {
+	border-radius: 15px;
+}
+
+.modal-header {
+	background-color:#00BFFF;
+	padding:9px 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.list-group-item {
+	border: none;
+}
+
+img{
+    width:350px;
+	height: 350px:
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+      <h5>Atlassian Jira Software</h5>
+    </div>
+	  <!-- The Modal -->
+	  <div class="modal fade" id="myModal1">
+		<div class="modal-dialog modal-xl">
+		  <div class="modal-content">
+		  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title">Atlassian Jira Software</h4>
+			  <button type="button" class="close" data-dismiss="modal">×</button>
+			</div>
+			
+			<!-- Modal body -->
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p align="justify"> 
+								Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.
+							</p>
+							<p align="justify">
+							Jira Software is part of a family of products designed to help teams of all types manage work. Originally, Jira was designed as a bug and issue tracker. But today, Jira has evolved into a powerful work management tool for all kinds of use cases, from requirements and test case management to agile software development. In this guide, you'll learn which features and functionalities of Jira can help your team with your unique needs. 
+							</p>
+							<p align="justify">
+							Whether you are doing scrum, kanban, or something in between, see how Jira can help your team stay on track. Jira Software can help your team manage a project from the start, through execution, to the wrap-up.
+							</p>
+						</div>
+						<div class="col">
+							<img class="rounded mx-auto d-block img-fluid" src="jira.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+			
+		  </div>
+		</div>
+	  </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+      <h5>Atlassian Jira Service Desk</h5>
+    </div>
+	  <!-- The Modal -->
+	  <div class="modal fade" id="myModal2">
+		<div class="modal-dialog modal-xl">
+		  <div class="modal-content">
+		  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title">Atlassian Jira Service Desk</h4>
+			  <button type="button" class="close" data-dismiss="modal">×</button>
+			</div>
+			
+			<!-- Modal body -->
+			<div class="modal-body">
+			<p align="justify"> 
+				Jira Service Desk is a help desk request tracker brought to you by Atlassian. With Jira Service Desk, you can easily receive, track, manage, and resolve requests from your team’s customers. Customers can send requests by email, a customizable help center, and an embeddable widget. Jira Service Desk organizes and prioritizes these requests in a single place, and keeps your team on track with goals (or service level agreements).
+			</p>
+			</div>
+			
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+			
+		  </div>
+		</div>
+	  </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+      <h5>Atlassian Confluence</h5>
+    </div>
+		  <!-- The Modal -->
+		  <div class="modal fade" id="myModal3">
+			<div class="modal-dialog modal-xl">
+			  <div class="modal-content">
+			  
+				<!-- Modal Header -->
+				<div class="modal-header">
+				  <h4 class="modal-title">Atlassian Confluence</h4>
+				  <button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+				
+				<!-- Modal body -->
+				<div class="modal-body">
+				<p align="justify"> 
+					Create, collaborate, and organize all your work in one place. Confluence is a team workspace where knowledge and collaboration meet. Dynamic pages give your team a place to create, capture, and collaborate on any project or idea. Spaces help your team structure, organize, and share work, so every team member has visibility into institutional knowledge and access to the information they need to do their best work.	
+				</p>
+				</br>
+				<p align="justify">
+					Confluence is for teams of any size and type, from those with mission-critical, high-stakes projects that need rigor behind their practices, to those that are looking for a space to build team culture and engage with one another in a more open and authentic way.
+				</p>
+				</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+				
+			  </div>
+			</div>
+		  </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+      <h5>Atlassian Align</h5>
+    </div>
+			  <!-- The Modal -->
+			  <div class="modal fade" id="myModal4">
+				<div class="modal-dialog modal-xl">
+				  <div class="modal-content">
+				  
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <h4 class="modal-title">Atlassian Align</h4>
+					  <button type="button" class="close" data-dismiss="modal">×</button>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+					<p align="justify"> 
+						
+					</p>
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+      <h5>Atlassian Crowd</h5>
+    </div>
+			  <!-- The Modal -->
+			  <div class="modal fade" id="myModal5">
+				<div class="modal-dialog modal-xl">
+				  <div class="modal-content">
+				  
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <h4 class="modal-title">Atlassian Crowd</h4>
+					  <button type="button" class="close" data-dismiss="modal">×</button>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+					<p align="justify"> 
+						
+					</p>
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+  </div>
+
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+      <h5>Atlassian Bamboo</h5>
+    </div>
+			  <!-- The Modal -->
+			  <div class="modal fade" id="myModal6">
+				<div class="modal-dialog modal-xl">
+				  <div class="modal-content">
+				  
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <h4 class="modal-title">Atlassian Bamboo</h4>
+					  <button type="button" class="close" data-dismiss="modal">×</button>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+							<div class="col">
+							 <p align="justify">
+							 Atlassian Bamboo is a continuous integration (CI) and deployment server. Bamboo assists software development teams by providing:
+							 </p>
+							 <ul class="list-group">
+							  <li class="list-group-item">Automated building and testing of software source-code status.</li>
+							  <li class="list-group-item">Updates on successful and failed builds.</li>
+							  <li class="list-group-item">Reporting tools for statistical analysis.</li>
+							</ul>
+							</div>
+							<div class="col">
+							  <img class="rounded mx-auto d-block img-fluid" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6731e0a87e9287343bbd4db721bce915/bamboo.png">
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">
+      <h5>Atlassian BitBucket</h5>
+    </div>
+			  <!-- The Modal -->
+			  <div class="modal fade" id="myModal7">
+				<div class="modal-dialog modal-xl">
+				  <div class="modal-content">
+				  
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <h4 class="modal-title">Atlassian BitBucket</h4>
+					  <button type="button" class="close" data-dismiss="modal">×</button>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+					<p align="justify"> 
+						
+					</p>
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8">
+      <h5>Atassian Access</h5>
+    </div>
+			  <!-- The Modal -->
+			  <div class="modal fade" id="myModal8">
+				<div class="modal-dialog modal-xl">
+				  <div class="modal-content">
+				  
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <h4 class="modal-title">Atlassian Access</h4>
+					  <button type="button" class="close" data-dismiss="modal">×</button>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+					
+					
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
